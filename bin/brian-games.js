@@ -1,2 +1,3 @@
 #!/usr/bin node
-console.log("Welcome to the Brian Games!")
+import {name} from '../src/cli.js';
+console.log(`Hello, ${name}!`);
