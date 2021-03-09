@@ -16,5 +16,12 @@
     "url": "https://github.com/milanych/frontend-project-lvl1/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/milanych/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/milanych/frontend-project-lvl1#readme",
+  "bin": {
+    "brian-games": "bin/brian-games.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {}
 }
