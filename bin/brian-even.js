@@ -21,7 +21,7 @@ const game = () => {
     };
    console.log('Question: ' + rand[i]);
    let answer = readlineSync.question('Your answer: ');
-    if (answer === isEven) {
+    if (answer === isEven()) {
       console.log('Correct!');
       i += 1;
     } else {
