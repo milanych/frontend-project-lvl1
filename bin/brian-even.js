@@ -20,8 +20,9 @@ const game = () => {
     } else if (answer === 'no' && rand[i] % 2 !== 0) {
       console.log('Correct!');
       i += 1;
-    }
+    } else {
     console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`)
+    }
   }
   console.log(`Congratulations, ${name}!`);
 }
