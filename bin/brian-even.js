@@ -25,11 +25,12 @@ const game = () => {
       console.log('Correct!');
       i += 1;
     } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven()}'. Let's try again, ${name}!`)
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven()}'.\nLet's try again, ${name}!`)
      break;
     }
+        console.log(`Congratulations, ${name}!`);
+
   }
-    console.log(`Congratulations, ${name}!`);
 
 }
 game();
