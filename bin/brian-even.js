@@ -25,7 +25,7 @@ const game = () => {
       console.log('Correct!');
       i += 1;
     } else {
-    console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`)
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven()}'. Let's try again, ${name}!`)
      break;
     }
   }
