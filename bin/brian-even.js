@@ -13,6 +13,7 @@ let rand = random();
 const game = () => {
   for (let i of rand) {
     console.log('Question: ' + i);
+    readlineSync.question('Your answer: ');
     if (i % 2 === 0 && readlineSync.question('Your answer: ') === 'yes') {
       console.log('Correct!');
     } 
