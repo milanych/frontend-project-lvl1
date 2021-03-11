@@ -30,4 +30,4 @@ const game = () => {
       console.log(`Congratulations, ${name}!`);
   }
 }
-game();
+export game();
