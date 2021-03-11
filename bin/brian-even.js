@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const name = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ')
 console.log(`Hello, ${name}\nAnwser "yes" if number is even, otherwise answer "no".`);
 let num = Math.floor(Math.random() * 100);
-const question = readlineSync.question('Question: ' + num);
+console.log('Question: ' + num);
 readlineSync.setDefaultOptions({limit: ['yes', 'no']});
 const answer = readlineSync.question('Your answer: ');
 const isEven = (result) => {
