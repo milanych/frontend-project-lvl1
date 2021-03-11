@@ -25,9 +25,9 @@ const game = () => {
      break;
     }
   }
-  console.log(`Congratulations, ${name}!`);
 }
 game();
 
+  console.log(`Congratulations, ${name}!`);
 
 
