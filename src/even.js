@@ -10,7 +10,7 @@ const random = () => {
   return result;
 }
 let rand = random();
-const game = () => {
+export const game = () => {
   for (let i = 0; i < rand.length;) {
     const isEven = () => {
       if (rand[i] % 2 === 0) {
@@ -30,4 +30,3 @@ const game = () => {
       console.log(`Congratulations, ${name}!`);
   }
 }
-export game();
