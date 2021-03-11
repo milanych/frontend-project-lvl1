@@ -1,0 +1,3 @@
+#!usr/bin/env node
+console.log("Welcome to the Brian Games!")
+/usr/lib/node_modules/@hexlet/code/bin/brian-james.js'
