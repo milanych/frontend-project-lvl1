@@ -11,14 +11,14 @@ const random = () => {
 }
 let rand = random();
 const game = () => {
-  for (let i of rand) {
-    console.log('Question: ' + i);
+  for (let i = 0; i < rand.length;) {
+   console.log('Question: ' + i);
    let answer = readlineSync.question('Your answer: ');
     if ((i % 2 === 0 && answer === 'yes') || (i % 2 !== 0 && answer === 'no' )) {
       console.log('Correct!');
+      i += 1;
     } 
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answer}'. Let's try again, ${name}!`)
-    break;
+    console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`)
   }
   console.log(`Congratulations, ${name}!`);
 }
