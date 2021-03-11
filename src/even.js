@@ -8,6 +8,7 @@ export const random = () => {
   }
   return result;
 }
+export const rand = random();
 export const game = () => {
   for (let i = 0; i < rand.length;) {
     const isEven = () => {
