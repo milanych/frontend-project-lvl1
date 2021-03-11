@@ -22,7 +22,6 @@ const game = () => {
       i += 1;
     }
     console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`)
-    break;
   }
   console.log(`Congratulations, ${name}!`);
 }
