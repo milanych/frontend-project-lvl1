@@ -11,13 +11,17 @@ const random = () => {
 }
 let rand = random();
 const game = () => {
+
   for (let i = 0; i < rand.length;) {
+    const isEven = () => {
+      if (rand[i] % 2 === 0) {
+        return 'yes';
+      } 
+      return 'no';
+    };
    console.log('Question: ' + rand[i]);
    let answer = readlineSync.question('Your answer: ');
-    if (answer === 'yes' && rand[i] % 2 === 0) {
-      console.log('Correct!');
-      i += 1;
-    } else if (answer === 'no' && rand[i] % 2 !== 0) {
+    if (answer === isEven) {
       console.log('Correct!');
       i += 1;
     } else {
