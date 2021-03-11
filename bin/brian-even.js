@@ -14,7 +14,7 @@ const game = () => {
   for (let i of rand) {
     console.log('Question: ' + i);
     readlineSync.question('Your answer: ');
-    if ((i % 2 === 0 && readlineSync.question('Your answer: ') === 'yes' || i % 2 !== 0 && readlineSync.question('Your answer: ') === 'no' ) {
+    if ((i % 2 === 0 && readlineSync.question('Your answer: ') === 'yes') || (i % 2 !== 0 && readlineSync.question('Your answer: ') === 'no' )) {
       console.log('Correct!');
     } 
     console.log(`'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${name}!`)
