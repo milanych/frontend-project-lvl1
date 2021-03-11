@@ -14,10 +14,10 @@ const game = () => {
   for (let i = 0; i < rand.length;) {
    console.log('Question: ' + rand[i]);
    let answer = readlineSync.question('Your answer: ');
-    if (answer === 'yes' && i % 2 === 0) {
+    if (answer === 'yes' && rand[i] % 2 === 0) {
       console.log('Correct!');
       i += 1;
-    } else if (answer === 'no' && i % 2 !== 0) {
+    } else if (answer === 'no' && rand[i] % 2 !== 0) {
       console.log('Correct!');
       i += 1;
     }
