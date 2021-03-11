@@ -13,6 +13,7 @@ const isEven = (result) => {
     return `'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`
   };
 };
+isEven();
 const answer2 = readlineSync.question('Your answer: ');
 const isEven2 = (result) => {
   if (num % 2 === 0 && answer2 === 'yes') {
