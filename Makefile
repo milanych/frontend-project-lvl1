@@ -1,10 +1,10 @@
 install:
 	npm install
-brian-games:
-	node bin/brian-games.js
-brian-even:
-	node bin/brian-even.js
+brain-games:
+	node bin/brain-games.js
+brain-even:
+	node bin/brain-even.js
 publish:
 	npm publish --dry-run
 lint:
-	npx eslint .
+	npx eslint --fix .
