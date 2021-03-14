@@ -18,8 +18,9 @@
   "type": "module",
   "homepage": "https://github.com/milanych/frontend-project-lvl1#readme",
   "bin": {
-    "brian-games": "bin/brian-games.js",
-    "brian-even": "bin/brian-even.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.1",
