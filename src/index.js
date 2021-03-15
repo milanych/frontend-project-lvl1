@@ -2,6 +2,14 @@ import readlineSync from 'readline-sync';
 
 export const name = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
 
+export const random2 = () => {
+  const result = [];
+  for (let x = 0; x < 2; x += 1) {
+    result.push(Math.floor(Math.random() * 100));
+  }
+  return result;
+};
+
 export const random3 = () => {
   const result = [];
   for (let x = 0; x < 3; x += 1) {
