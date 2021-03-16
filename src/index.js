@@ -26,3 +26,9 @@ export const random6 = () => {
   }
   return result;
 };
+
+export const random = () => {
+  const prog = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const progressor = Math.floor(Math.random() + 10);
+  return prog[progressor];
+};
