@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { name } from '../src/index.js';
 
 let summator = 0;
-console.log(`Hello, ${name}!\nAnswer "yes" if givember is prime. Otherwise answer "no".`);
+console.log(`Hello, ${name}!\nAnswer 'yes' if given number is prime. Otherwise answer 'no'.`);
 export const prime = () => {
   for (let z = 0; z < 3;) {
     let result = 0;
