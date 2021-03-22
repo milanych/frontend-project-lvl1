@@ -7,10 +7,12 @@ export const progression = () => {
   for (let z = 0; z < 3;) {
     const result = [];
     const prog = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const len = [5, 6, 7, 8, 9, 10];
+    const lenRandom = len[Math.floor(Math.random() * 6)];
     const random = prog[Math.floor(Math.random() * 10)];
 
     let start = Math.floor(Math.random() * 10);
-    for (let i = 0; i < 10; i += 1) {
+    for (let i = 0; i < lenRandom; i += 1) {
       result.push(start);
       start += random;
     }
