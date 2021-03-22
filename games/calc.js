@@ -17,6 +17,7 @@ export const game = () => {
       } if (sign === '*') {
         return one * two;
       }
+      return 'error';
     };
     result.push(mathResult(rand[i], randSign, rand[max]));
     console.log(`Question: ${rand[i]} ${randSign} ${rand[max]}`);
