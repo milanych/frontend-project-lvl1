@@ -142,7 +142,7 @@ export const progression = () => {
       result.push(start);
       start += random;
     }
-    result.splice(random, 1, '...');
+    result.splice(random, 1, '..');
     const str = result.join(' ');
     console.log(`Question: ${str}`);
     const answer = readlineSync.question('Your answer: ');
