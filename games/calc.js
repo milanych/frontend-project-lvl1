@@ -3,7 +3,7 @@ import { name, random6 } from '../src/index.js';
 export const calc = () => {
   const rand = random6();
   let max = rand.length - 1;
-  //   let summator = 0;
+  let summator = 0;
   const signs = ['+', '-', '*'];
   const result = [];
   for (let i = 0; i < rand.length / 2; i += 1, max -= 1) {
