@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import { name } from '../src/index.js';
-    let summator = 0;
+let summator = 0;
 
 console.log(`Hello, ${name}!\nWhat number is missing in the progression?`);
 export const progression = () => {
