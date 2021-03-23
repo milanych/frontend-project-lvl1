@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 import { name } from '../src/index.js';
-
+let summator = 0;
 console.log(`Hello, ${name}!\nAnswer 'yes' if given number is prime. Otherwise answer 'no'.`);
 export const prime = () => {
   for (let z = 0; z < 3;) {
-    let summator = 0;
+
     let result = 0;
     let question = '';
     let randomPrime = Math.floor(Math.random() * 100);
@@ -24,7 +24,7 @@ export const prime = () => {
     } else {
       question = 'yes';
     }
-    console.log(`Question: ${random}`);
+    console.log(`Question: ${randomPrime}`);
     const answer = readlineSync.question('Your answer: ');
     if (question === answer) {
       console.log('Correct!');
