@@ -146,12 +146,12 @@ export const progression = () => {
     const str = result.join(' ');
     console.log(`Question: ${str}`);
     const answer = readlineSync.question('Your answer: ');
-    if ((result[result.indexOf('...') - 1] + random) === Number(answer)) {
+    if ((result[result.indexOf('..') - 1] + random) === Number(answer)) {
       console.log('Correct!');
       z += 1;
       summator += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result[result.indexOf('...') - 1] + random}'.\nLet's try again, ${name}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${result[result.indexOf('..') - 1] + random}'.\nLet's try again, ${name}!`);
       break;
     }
   }
@@ -163,7 +163,7 @@ export const progression = () => {
 export const calc = () => {
   const rand = random6();
   let max = rand.length - 1;
-//   let summator = 0;
+  //   let summator = 0;
   const signs = ['+', '-', '*'];
   const result = [];
   for (let i = 0; i < rand.length / 2; i += 1, max -= 1) {
