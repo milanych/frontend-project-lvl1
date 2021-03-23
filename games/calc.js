@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import { name, random6 } from '../src/index.js';
+console.log('Find the greatest common divisor of given numbers.');
 export const calc = () => {
   const rand = random6();
   let max = rand.length - 1;
