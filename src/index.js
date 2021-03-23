@@ -96,10 +96,10 @@ export const prime = () => {
   for (let z = 0; z < 3;) {
     let result = 0;
     let question = '';
-    const random = Math.floor(Math.random() * 100);
-    if (random > 1) {
-      for (let i = 2; i < random; i += 1) {
-        const num = random % i;
+    let randomPrime = Math.floor(Math.random() * 100);
+    if (randomPrime > 1) {
+      for (let i = 2; i < randomPrime; i += 1) {
+        const num = randomPrime % i;
         if (num === 0) {
           result = 1;
           break;
