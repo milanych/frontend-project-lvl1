@@ -3,7 +3,7 @@ import { random3, name } from '../src/index.js';
 
 console.log(`Hello, ${name}\nAnwser "yes" if number is even, otherwise answer "no".`);
 export const even = () => {
-  // let summator = 0;
+  let summator = 0;
   const rand = random3();
   for (let i = 0; i < rand.length;) {
     const isEven = () => {
