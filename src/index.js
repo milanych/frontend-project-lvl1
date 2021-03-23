@@ -32,9 +32,10 @@ export const random = () => {
   const progressor = Math.floor(Math.random() + 10);
   return prog[progressor];
 };
+  let summator = 0;
 
 export const even = () => {
-  let summator = 0;
+  // let summator = 0;
   const rand = random3();
   for (let i = 0; i < rand.length;) {
     const isEven = () => {
@@ -62,7 +63,6 @@ export const even = () => {
 export const divisor = () => {
   const result = [];
   const sum = [];
-  let summator = 0;
   for (let z = 0; z < 3;) {
     const arr = random2();
     const sorted = arr.sort();
