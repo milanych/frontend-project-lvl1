@@ -3,7 +3,7 @@ import { name, random2 } from '../src/index.js';
 
 let summator = 0;
 console.log('Find the greatest common divisor of given numbers.');
-export const divisor = () => {
+const divisor = () => {
   const result = [];
   const sum = [];
   for (let z = 0; z < 3;) {
@@ -34,3 +34,4 @@ export const divisor = () => {
     console.log(`Congratulations, ${name}!`);
   }
 };
+export default divisor;

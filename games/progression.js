@@ -4,7 +4,7 @@ import { name } from '../src/index.js';
 let summator = 0;
 
 console.log(`Hello, ${name}!\nWhat number is missing in the progression?`);
-export const progression = () => {
+const progression = () => {
   for (let z = 0; z < 3;) {
     const result = [];
     const prog = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -34,3 +34,4 @@ export const progression = () => {
     console.log(`Congratulations, ${name}!`);
   }
 };
+export default progression;
