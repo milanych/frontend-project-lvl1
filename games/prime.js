@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 import { name } from '../src/index.js';
+
 let summator = 0;
 console.log(`Hello, ${name}!\nAnswer 'yes' if given number is prime. Otherwise answer 'no'.`);
 export const prime = () => {
   for (let z = 0; z < 3;) {
-
     let result = 0;
     let question = '';
-    let randomPrime = Math.floor(Math.random() * 100);
+    const randomPrime = Math.floor(Math.random() * 100);
     if (randomPrime > 1) {
       for (let i = 2; i < randomPrime; i += 1) {
         const num = randomPrime % i;
