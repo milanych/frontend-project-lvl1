@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 import { name } from '../src/index.js';
+    let summator = 0;
 
 console.log(`Hello, ${name}!\nWhat number is missing in the progression?`);
 export const progression = () => {
   for (let z = 0; z < 3;) {
-    let summator = 0;
     const result = [];
     const prog = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const len = [5, 6, 7, 8, 9, 10];
