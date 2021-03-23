@@ -32,7 +32,7 @@ export const random = () => {
   const progressor = Math.floor(Math.random() + 10);
   return prog[progressor];
 };
-  let summator = 0;
+let summator = 0;
 
 export const even = () => {
   // let summator = 0;
