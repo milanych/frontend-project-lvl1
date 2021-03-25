@@ -7,13 +7,13 @@
 
 ![example workflow](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml/badge.svg)
 brain-even:
-!(https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
+![Alt text](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
 
 brain-gcd1:
-!(https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
+![Alt text](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
 
 brain-progression:
-!(https://asciinema.org/a/fPckvCv9Ngo9fVexhXYKGiebu)
+![Alt text](https://asciinema.org/a/fPckvCv9Ngo9fVexhXYKGiebu)
 
 brain-prime:
-!(https://asciinema.org/a/NFojiTRCbuqvVgLeQQW4KsMsv)
+![Alt text](https://asciinema.org/a/NFojiTRCbuqvVgLeQQW4KsMsv)
