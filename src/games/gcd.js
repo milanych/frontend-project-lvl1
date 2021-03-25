@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { name, random2 } from '../src/index.js';
+import { name, random2 } from '../index.js';
 
 let summator = 0;
 console.log('Find the greatest common divisor of given numbers.');

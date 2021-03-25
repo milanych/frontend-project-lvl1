@@ -1,7 +1,17 @@
 import readlineSync from 'readline-sync';
 
 export const name = readlineSync.question('Welcome to the Brain Games!\nMay I have your name? ');
-
+export const greet = console.log(`Hello, ${name}!`);
+export const mathResult = (one, sign, two) => {
+  if (sign === '+') {
+    return one + two;
+  } if (sign === '-') {
+    return one - two;
+  } if (sign === '*') {
+    return one * two;
+  }
+  return 'error';
+};
 export const random2 = () => {
   const result = [];
   for (let x = 0; x < 2; x += 1) {

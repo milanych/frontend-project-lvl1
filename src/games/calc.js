@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import { name, random6 } from '../src/index.js';
+import { name, random6, mathResult } from '../index.js';
 
 console.log('Find the greatest common divisor of given numbers.');
 const calc = () => {
@@ -11,16 +11,6 @@ const calc = () => {
   const result = [];
   for (let i = 0; i < rand.length / 2; i += 1, max -= 1) {
     const randSign = signs[Math.floor(Math.random() * 3)];
-    const mathResult = (one, sign, two) => {
-      if (sign === '+') {
-        return one + two;
-      } if (sign === '-') {
-        return one - two;
-      } if (sign === '*') {
-        return one * two;
-      }
-      return 'error';
-    };
     result.push(mathResult(rand[i], randSign, rand[max]));
     console.log(`Question: ${rand[i]} ${randSign} ${rand[max]}`);
     const answer = readlineSync.question('Your answer: ');

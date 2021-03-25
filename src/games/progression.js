@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/index.js';
+import { name } from '../index.js';
 
 let summator = 0;
 
