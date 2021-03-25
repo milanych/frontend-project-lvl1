@@ -3,7 +3,6 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa9dd2287860487c3c0d/maintainability)](https://codeclimate.com/github/milanych/frontend-project-lvl1/maintainability)
 
-[![Super-Linter](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml/badge.svg)](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml)
 
 brain-even:
 [![asciicast](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl.png)](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
