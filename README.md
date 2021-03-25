@@ -1,19 +1,18 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/milanych/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/milanych/frontend-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/fa9dd2287860487c3c0d/maintainability)](https://codeclimate.com/github/milanych/frontend-project-lvl1/maintainability)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
+[![Super-Linter](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml/badge.svg)](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml)
 
-![example workflow](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml/badge.svg)
-
+brain-even:
 [![asciicast](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl.png)](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
 
 brain-gcd1:
-![Alt text](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
+[![asciicast](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG.png)](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
 
 brain-progression:
-![Alt text](https://asciinema.org/a/fPckvCv9Ngo9fVexhXYKGiebu)
+[![asciicast](https://asciinema.org/a/fPckvCv9Ngo9fVexhXYKGiebu.png)](https://asciinema.org/a/fPckvCv9Ngo9fVexhXYKGiebu)
 
 brain-prime:
-![Alt text](https://asciinema.org/a/NFojiTRCbuqvVgLeQQW4KsMsv)
+[![asciicast](https://asciinema.org/a/NFojiTRCbuqvVgLeQQW4KsMsv.png)](https://asciinema.org/a/NFojiTRCbuqvVgLeQQW4KsMsv)
