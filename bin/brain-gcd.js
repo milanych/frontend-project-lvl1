@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import divisor from '../games/gcd.js';
+import divisor from '../src/games/gcd.js';
 
 divisor();

@@ -3,11 +3,13 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa9dd2287860487c3c0d/maintainability)](https://codeclimate.com/github/milanych/frontend-project-lvl1/maintainability)
 
+brain-calc:
+[![asciicast](https://asciinema.org/a/Oz0jTan7CVVBH2SS9zaAReIV7.png)](https://asciinema.org/a/Oz0jTan7CVVBH2SS9zaAReIV7)
 
 brain-even:
 [![asciicast](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl.png)](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
 
-brain-gcd1:
+brain-gcd:
 [![asciicast](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG.png)](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
 
 brain-progression:

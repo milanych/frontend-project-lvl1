@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import result from '../games/cli.js';
+import result from '../src/cli.js';
 
 result();
