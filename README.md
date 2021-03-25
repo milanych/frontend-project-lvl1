@@ -7,7 +7,7 @@
 
 ![example workflow](https://github.com/milanych/frontend-project-lvl1/actions/workflows/superlinter.yml/badge.svg)
 
-[![asciicast](https://asciinema.org/a/ZMEFNQ3VIqLeNgu2paUgb6kMl.png)](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
+[![asciicast](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl.png)](https://asciinema.org/a/ZMEFNQ3VIqLrNgu2paUgb6kMl)
 
 brain-gcd1:
 ![Alt text](https://asciinema.org/a/GggQT7WWoaCwONmHliU05QmyG)
