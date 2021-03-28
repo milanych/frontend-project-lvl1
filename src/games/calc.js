@@ -22,8 +22,6 @@ const calc = () => {
       break;
     }
   }
-  if (summator === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  sum();
 };
 export default calc;
