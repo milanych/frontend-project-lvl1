@@ -42,3 +42,8 @@ export const random = () => {
   const progressor = Math.floor(Math.random() + 10);
   return prog[progressor];
 };
+export const sum = () => {
+    if (summator === 3) {
+    console.log(`Congratulations, ${name}!`);
+  }
+}
