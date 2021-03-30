@@ -1,9 +1,8 @@
-import readlineSync from 'readline-sync';
 import { name } from '../index.js';
 
 let summator = 0;
 
-console.log(`Hello, ${name}!\nWhat number is missing in the progression?`);
+console.log(`What number is missing in the progression?`);
 const progression = () => {
   for (let z = 0; z < 3;) {
     const result = [];
