@@ -3,6 +3,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/fa9dd2287860487c3c0d/maintainability)](https://codeclimate.com/github/milanych/frontend-project-lvl1/maintainability)
 
+# Install games
+```
+install-games
+```
 brain-calc:
 [![asciicast](https://asciinema.org/a/Oz0jTan7CVVBH2SS9zaAReIV7.png)](https://asciinema.org/a/Oz0jTan7CVVBH2SS9zaAReIV7)
 

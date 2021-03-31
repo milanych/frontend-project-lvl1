@@ -1,5 +1,7 @@
 install:
 	npm install
+install-games:
+	npm link
 brain-games:
 	node bin/brain-games.js
 brain-even:
