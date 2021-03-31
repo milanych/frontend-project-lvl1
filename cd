@@ -1,8 +1,0 @@
-total 28
-drwxr-xr-x 2 vadim_system vadim_system 4096 Mar 31 14:28 .
-drwxr-xr-x 3 vadim_system vadim_system 4096 Mar 31 13:50 ..
--rw-r--r-- 1 vadim_system vadim_system  730 Mar 31 12:45 calc.js
--rw-r--r-- 1 vadim_system vadim_system  436 Mar 31 12:43 even.js
--rw-r--r-- 1 vadim_system vadim_system 1127 Mar 31 12:43 gcd.js
--rw-r--r-- 1 vadim_system vadim_system 1115 Mar 31 12:43 prime.js
--rw-r--r-- 1 vadim_system vadim_system  611 Mar 31 14:29 progression.js
