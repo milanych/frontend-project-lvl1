@@ -15,4 +15,4 @@ const gameData = () => {
   return [r, q];
 };
 const enter = console.log('What number is missing in the progression?');
-export const progGame = () => gameLogic(enter, gameData);
+export default () => gameLogic(enter, gameData);

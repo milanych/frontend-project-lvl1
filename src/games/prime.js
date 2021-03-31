@@ -25,4 +25,4 @@ const gameData = () => {
   return [r, q];
 };
 const enter = console.log('Answer \'yes\' if given number is prime. Otherwise answer \'no\'.');
-export const primeGame = () => gameLogic(enter, gameData);
+export default () => gameLogic(enter, gameData);

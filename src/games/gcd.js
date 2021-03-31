@@ -18,4 +18,4 @@ const gameData = () => {
   return [r, q];
 };
 const enter = console.log('Find the greatest common divisor of given numbers.');
-export const gcdGame = () => gameLogic(enter, gameData);
+export default () => gameLogic(enter, gameData);

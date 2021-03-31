@@ -13,4 +13,4 @@ const gameData = () => {
 };
 
 const enter = console.log('Answer "yes" if number is even, otherwise answer "no".');
-export const evenGame = () => gameLogic(enter, gameData);
+export default () => gameLogic(enter, gameData);
