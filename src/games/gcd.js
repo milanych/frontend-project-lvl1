@@ -2,7 +2,7 @@ import { gameLogic, getRandomNumber } from '../index.js';
 
 const gameData = () => {
   let result = 0;
-  const arr = [getRandomNumber(), getRandomNumber()];
+  const arr = [getRandomNumber(1, 100), getRandomNumber(1, 100)];
   const sorted = arr.sort();
   for (let i = 0; i <= sorted[0]; i += 1) {
     const cur1 = sorted[0] / i;
