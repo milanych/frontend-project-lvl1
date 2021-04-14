@@ -7,7 +7,7 @@
 # Install games
 
 ```
-install-games
+make install-games
 ```
 
 ## brain-calc:

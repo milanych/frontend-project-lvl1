@@ -6,4 +6,4 @@ extends:
 parserOptions:
   ecmaVersion: 12
   sourceType: module
-rules: { "import/extensions": 0, "no-console": 0 }
+rules: { "import/extensions": "off", "no-console": "off" }
