@@ -1,4 +1,4 @@
 import { name } from './index.js';
 
-const result = () => console.log(`Hello, ${name}!`);
+const result = () => `Hello, ${name}!`;
 export default result;
