@@ -18,8 +18,8 @@ jobs:
         uses: actions/checkout@v2
 
       # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/eslint@v7
+      - name: Run ESlint
+        uses: github/eslint
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
