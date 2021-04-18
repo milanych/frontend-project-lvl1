@@ -8,7 +8,7 @@ export default (enter, startGame) => {
     const [correctAnswer, question] = startGame();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question("Your answer: ");
-    if (correctAnswer !== answer) {
+    if (String(correctAnswer) !== String(answer)) {
       console.log(
         `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
       );
