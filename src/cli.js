@@ -1,5 +1,7 @@
+import readlineSync from 'readline-sync';
+
 const name = readlineSync.question(
-  "Welcome to the Brain Games!\nMay I have your name? "
+  'Welcome to the Brain Games!\nMay I have your name? ',
 );
 
 const result = () => `Hello, ${name}!`;

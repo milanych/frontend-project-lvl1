@@ -1,4 +1,4 @@
-import { generateRandomNumber } from "../util.js";
+import generateRandomNumber from '../util.js';
 
 const gameData = () => {
   let result = 0;
@@ -17,5 +17,5 @@ const gameData = () => {
   const q = `${sorted[0]} ${sorted[1]}`;
   return [r, q];
 };
-const enter = console.log("Find the greatest common divisor of given numbers.");
+const enter = console.log('Find the greatest common divisor of given numbers.');
 export default () => [enter, gameData];
