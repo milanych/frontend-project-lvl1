@@ -1,20 +1,20 @@
-import generateRandomNumber from "../util.js";
-import startGame from "../index.js";
+import generateRandomNumber from '../util.js';
+import startGame from '../index.js';
 
 const gameData = () => {
   const mathResult = (one, sign, two) => {
-    if (sign === "+") {
+    if (sign === '+') {
       return one + two;
     }
-    if (sign === "-") {
+    if (sign === '-') {
       return one - two;
     }
-    if (sign === "*") {
+    if (sign === '*') {
       return one * two;
     }
-    return "error";
+    return 'error';
   };
-  const signs = ["+", "-", "*"];
+  const signs = ['+', '-', '*'];
   const randSign = signs[Math.floor(Math.random() * 3)];
   const number1 = generateRandomNumber();
   const number2 = generateRandomNumber();
@@ -22,5 +22,5 @@ const gameData = () => {
   const question = `${number1} ${randSign} ${number2}`;
   return [result, question];
 };
-const enter = console.log("Find the greatest common divisor of given numbers.");
+const enter = console.log('Find the greatest common divisor of given numbers.');
 export default () => startGame(enter, gameData);

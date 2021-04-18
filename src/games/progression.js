@@ -1,5 +1,5 @@
-import generateRandomNumber from "../util.js";
-import startGame from "../index.js";
+import generateRandomNumber from '../util.js';
+import startGame from '../index.js';
 
 const gameData = () => {
   const strLength = generateRandomNumber(5, 10);
@@ -10,10 +10,10 @@ const gameData = () => {
     result.push(start);
     start += progRandom;
   }
-  result.splice(progRandom, 1, "..");
-  const r = `${result[result.indexOf("..") - 1] + progRandom}`;
-  const q = result.join(" ");
+  result.splice(progRandom, 1, '..');
+  const r = `${result[result.indexOf('..') - 1] + progRandom}`;
+  const q = result.join(' ');
   return [r, q];
 };
-const enter = console.log("What number is missing in the progression?");
+const enter = console.log('What number is missing in the progression?');
 export default () => startGame(enter, gameData);
