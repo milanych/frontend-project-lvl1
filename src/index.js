@@ -1,4 +1,5 @@
 import readlineSync from "readline-sync";
+import greet from "./cli.js";
 const rounds = 3;
 
 export default (enter, startGame) => {
