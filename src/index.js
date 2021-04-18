@@ -10,11 +10,13 @@ export default (enter, startGame) => {
     const [correctAnswer, question] = startGame();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question("Your answer: ");
-    correctAnswer !== answer
-      ? console.log(
-          `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`
-        )
-      : console.log("Correct!");
+    if (correctAnswer !== answer) {
+      console.log(
+        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`
+      );
+      break;
+    }
+    console.log("Correct!");
   }
   return console.log(`Congratulations, ${name}!`);
 };
