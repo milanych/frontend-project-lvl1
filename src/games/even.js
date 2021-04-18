@@ -1,4 +1,5 @@
 import generateRandomNumber from "../util.js";
+import startGame from "../index.js";
 
 const gameData = () => {
   const question = generateRandomNumber();
