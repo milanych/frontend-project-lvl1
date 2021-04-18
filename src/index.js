@@ -16,8 +16,9 @@ export default (enter, startGame) => {
       );
 
       console.log(`Let's try again, ${name}!`);
+    } else {
+      console.log("Correct!");
     }
-    console.log("Correct!");
   }
   console.log(`Congratulations, ${name}!`);
 };
