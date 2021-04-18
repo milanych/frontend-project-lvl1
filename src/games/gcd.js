@@ -1,8 +1,8 @@
-import { gameLogic, getRandomNumber } from '../index.js';
+import { generateRandomNumber } from "../util.js";
 
 const gameData = () => {
   let result = 0;
-  const arr = [getRandomNumber(1, 100), getRandomNumber(1, 100)];
+  const arr = [generateRandomNumber(1, 100), generateRandomNumber(1, 100)];
   const sorted = arr.sort();
   for (let i = 0; i <= sorted[0]; i += 1) {
     const cur1 = sorted[0] / i;
@@ -17,5 +17,5 @@ const gameData = () => {
   const q = `${sorted[0]} ${sorted[1]}`;
   return [r, q];
 };
-const enter = console.log('Find the greatest common divisor of given numbers.');
-export default () => gameLogic(enter, gameData);
+const enter = console.log("Find the greatest common divisor of given numbers.");
+export default () => [enter, gameData];
