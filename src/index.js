@@ -1,10 +1,10 @@
 import readlineSync from "readline-sync";
+const rounds = 3;
 
 export default (enter, startGame) => {
   const name = readlineSync.question(
     "Welcome to the Brain Games!\nMay I have your name? "
   );
-  const rounds = 3;
   console.log(`Hello, ${name}!`);
   for (let summator = 0; summator < rounds; summator += 1) {
     const [correctAnswer, question] = startGame();
@@ -19,5 +19,5 @@ export default (enter, startGame) => {
     }
     console.log("Correct!");
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
 };
