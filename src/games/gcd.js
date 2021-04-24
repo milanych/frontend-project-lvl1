@@ -14,7 +14,7 @@ const gameData = () => {
       result = i;
     }
   }
-  const r = result;
+  const r = String(result);
   const q = `${sorted[0]} ${sorted[1]}`;
   return [r, q];
 };
