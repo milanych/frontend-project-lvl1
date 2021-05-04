@@ -2,10 +2,9 @@ import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
 const description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-const gameData = () => {
+const randomPrime = generateRandomNumber();
+const isPrime = () => {
   let result = 0;
-  let question = '';
-  const randomPrime = generateRandomNumber();
   if (randomPrime > 1) {
     for (let i = 2; i < randomPrime; i += 1) {
       const num = randomPrime % i;
@@ -17,7 +16,11 @@ const gameData = () => {
   } else {
     result = 1;
   }
-  if (result === 1) {
+  return result;
+};
+const gameData = () => {
+  let question = '';
+  if (isPrime() === 1) {
     question = 'no';
   } else {
     question = 'yes';
