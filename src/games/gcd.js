@@ -19,7 +19,7 @@ const isGcd = () => {
 };
 
 const gameData = () => {
-  const answer = isGcd();
+  const answer = String(isGcd());
   const question = `${sorted[0]} ${sorted[1]}`;
   return [answer, question];
 };
