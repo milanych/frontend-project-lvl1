@@ -2,6 +2,9 @@ import startGame from '../index.js';
 import isEven from '../boolean.js';
 
 const description = 'Answer "yes" if number is even, otherwise answer "no".';
-const gameData = () => isEven();
+const gameData = () => {
+  [question, answer] = isEven();
+  return [question, answer];
+}
 
 export default () => startGame(description, gameData);
