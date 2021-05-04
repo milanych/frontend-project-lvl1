@@ -1,6 +1,6 @@
 import generateRandomNumber from './util.js';
 
-export default () => {
+export default (question, answer) => {
   const randomNumber = generateRandomNumber();
   if (randomNumber % 2 === 0) {
     return [randomNumber, 'yes'];
