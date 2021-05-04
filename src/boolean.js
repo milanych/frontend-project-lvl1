@@ -5,7 +5,7 @@ export default () => {
   const yes = 'yes';
   const no = 'no';
   if (randomNumber % 2 === 0) {
-    return [randomNumber, yes];
+    return [yes, randomNumber];
   }
-  return [randomNumber, no];
+  return [no, randomNumber];
 };
