@@ -1,6 +1,7 @@
 import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
+const description = 'What number is missing in the progression?';
 const gameData = () => {
   const strLength = generateRandomNumber(5, 10);
   const progRandom = generateRandomNumber(1, 10);
@@ -11,9 +12,8 @@ const gameData = () => {
     start += progRandom;
   }
   result.splice(progRandom, 1, '..');
-  const r = `${result[result.indexOf('..') - 1] + progRandom}`;
-  const q = result.join(' ');
-  return [r, q];
+  const answer = `${result[result.indexOf('..') - 1] + progRandom}`;
+  const question = result.join(' ');
+  return [answer, question];
 };
-const enter = console.log('What number is missing in the progression?');
-export default () => startGame(enter, gameData);
+export default () => startGame(description, gameData);

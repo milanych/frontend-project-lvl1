@@ -1,6 +1,7 @@
 import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
 const gameData = () => {
   let result = 0;
   const arr = [generateRandomNumber(1, 100), generateRandomNumber(1, 100)];
@@ -14,9 +15,8 @@ const gameData = () => {
       result = i;
     }
   }
-  const r = String(result);
-  const q = `${sorted[0]} ${sorted[1]}`;
-  return [r, q];
+  const answer = String(result);
+  const question = `${sorted[0]} ${sorted[1]}`;
+  return [answer, question];
 };
-const enter = console.log('Find the greatest common divisor of given numbers.');
-export default () => startGame(enter, gameData);
+export default () => startGame(description, gameData);

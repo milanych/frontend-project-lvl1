@@ -1,19 +1,7 @@
-import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
+import isEven from '../boolean.js';
 
-const gameData = () => {
-  const question = generateRandomNumber();
-  const isEven = () => {
-    if (question % 2 === 0) {
-      return 'yes';
-    }
-    return 'no';
-  };
-  const result = String(isEven());
-  return [result, question];
-};
+const description = 'Answer "yes" if number is even, otherwise answer "no".';
+const gameData = () => isEven();
 
-const enter = console.log(
-  'Answer "yes" if number is even, otherwise answer "no".',
-);
-export default () => startGame(enter, gameData);
+export default () => startGame(description, gameData);
