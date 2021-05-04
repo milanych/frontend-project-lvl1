@@ -16,9 +16,10 @@ const isPrime = (num) => {
   }
   return result;
 };
-const gameGameData = () => {
+const getGameData = () => {
   const randomPrime = generateRandomNumber();
   const question = isPrime(randomPrime) ? 'no' : 'yes';
-  return [question, randomPrime];
+  const result = randomPrime;
+  return [question, result];
 };
-export default () => startGame(gameDescription, gameGameData);
+export default () => startGame(gameDescription, getGameData);

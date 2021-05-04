@@ -2,7 +2,7 @@ import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
-const gameData = () => {
+const getGameData = () => {
   const strLength = generateRandomNumber(5, 10);
   const progRandom = generateRandomNumber(1, 10);
   let start = generateRandomNumber(0, 10);
@@ -16,4 +16,4 @@ const gameData = () => {
   const question = result.join(' ');
   return [answer, question];
 };
-export default () => startGame(description, gameData);
+export default () => startGame(description, getGameData);
