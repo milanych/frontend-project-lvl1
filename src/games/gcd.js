@@ -13,13 +13,13 @@ const isGcd = (num1, num2) => {
       result = i;
     }
   }
-  return result;
+  return String(result);
 };
 
 const getGameData = () => {
   const randomNumbers = [generateRandomNumber(1, 100), generateRandomNumber(1, 100)];
   const sortedRandomNumbers = randomNumbers.sort();
-  const answer = String(isGcd(sortedRandomNumbers[0], sortedRandomNumbers[1]));
+  const answer = isGcd(sortedRandomNumbers[0], sortedRandomNumbers[1]);
   const question = `${sortedRandomNumbers[0]} ${sortedRandomNumbers[1]}`;
   return [answer, question];
 };
