@@ -1,19 +1,21 @@
 import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
-const description = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
+
 const getGameData = () => {
-  const strLength = generateRandomNumber(5, 10);
-  const progRandom = generateRandomNumber(1, 10);
-  let start = generateRandomNumber(0, 10);
   const result = [];
-  for (let i = 0; i < strLength; i += 1) {
-    result.push(start);
-    start += progRandom;
+  const progressionLength = generateRandomNumber(5, 10);
+  const progression = generateRandomNumber(1, 10);
+  let startNumber = generateRandomNumber(0, 10);
+  for (let i = 0; i < progressionLength; i += 1) {
+    result.push(startNumber);
+    startNumber += progression;
   }
-  result.splice(progRandom, 1, '..');
-  const answer = `${result[result.indexOf('..') - 1] + progRandom}`;
+  result.splice(progression, 1, '..');
+  const hiddenNumber = result[result.indexOf('..') - 1] + progression;
+  const answer = `${hiddenNumber}`;
   const question = result.join(' ');
   return [answer, question];
 };
-export default () => startGame(description, getGameData);
+export default () => startGame(gameDescription, getGameData);
