@@ -2,13 +2,13 @@ import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
-const makeProgression = (start, length, progression) => {
+const makeProgression = (start, length, number) => {
   const progressionResult = [];
   for (let i = 0; i < length; i += 1) {
-    const step = start + progression;
+    const step = start + number * i;
     progressionResult.push(step);
   }
-  progressionResult.splice(progression, 1, '..');
+  progressionResult.splice(number, 1, '..');
   return progressionResult;
 };
 
