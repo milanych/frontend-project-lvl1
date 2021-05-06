@@ -19,7 +19,7 @@ const isPrime = (num) => {
 const getGameData = () => {
   const randomPrime = generateRandomNumber();
   const question = isPrime(randomPrime) ? 'no' : 'yes';
-  const result = randomPrime;
-  return [question, result];
+  const answer = randomPrime;
+  return [question, answer];
 };
 export default () => startGame(gameDescription, getGameData);

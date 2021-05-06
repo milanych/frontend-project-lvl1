@@ -15,8 +15,8 @@ const getGameData = () => {
   const randomSign = getRandomSign();
   const number2 = generateRandomNumber();
 
-  const result = String(mathResult(number1, randomSign, number2));
+  const answer = String(mathResult(number1, randomSign, number2));
   const question = `${number1} ${randomSign} ${number2}`;
-  return [result, question];
+  return [answer, question];
 };
 export default () => startGame(gameDescription, getGameData);
