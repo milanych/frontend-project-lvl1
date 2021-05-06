@@ -2,7 +2,7 @@ import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-const isGcd = (num1, num2) => {
+const getGcd = (num1, num2) => {
   let result = 0;
   for (let i = 0; i <= num1; i += 1) {
     const currentNum1 = num1 / i;
@@ -19,7 +19,7 @@ const isGcd = (num1, num2) => {
 const getGameData = () => {
   const randomNumbers = [generateRandomNumber(1, 100), generateRandomNumber(1, 100)];
   const sortedRandomNumbers = randomNumbers.sort();
-  const answer = isGcd(sortedRandomNumbers[0], sortedRandomNumbers[1]);
+  const answer = getGcd(sortedRandomNumbers[0], sortedRandomNumbers[1]);
   const question = `${sortedRandomNumbers[0]} ${sortedRandomNumbers[1]}`;
   return [answer, question];
 };
