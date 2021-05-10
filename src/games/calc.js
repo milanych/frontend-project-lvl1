@@ -14,7 +14,7 @@ const mathResult = (one, sign, two) => {
   return 'error';
 };
 
-const gameDescription = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getRandomSign = () => {
   const signs = ['+', '-', '*'];
@@ -22,7 +22,7 @@ const getRandomSign = () => {
   return randomSign;
 };
 
-const getGameData = () => {
+const getRound = () => {
   const number1 = generateRandomNumber();
   const randomSign = getRandomSign();
   const number2 = generateRandomNumber();
@@ -31,4 +31,4 @@ const getGameData = () => {
   const question = `${number1} ${randomSign} ${number2}`;
   return [answer, question];
 };
-export default () => startGame(gameDescription, getGameData);
+export default () => startGame(description, getRound);
