@@ -1,6 +1,18 @@
 import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
-import mathResult from '../math.js';
+
+const mathResult = (one, sign, two) => {
+  if (sign === '+') {
+    return one + two;
+  }
+  if (sign === '-') {
+    return one - two;
+  }
+  if (sign === '*') {
+    return one * two;
+  }
+  return 'error';
+};
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
