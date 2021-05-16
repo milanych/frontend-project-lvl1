@@ -1,7 +1,9 @@
 import generateRandomNumber from '../util.js';
 import startGame from '../index.js';
 
-const mathResult = (one, sign, two) => {
+const description = 'Find the greatest common divisor of given numbers.';
+const signs = ['+', '-', '*'];
+const calculate = (one, sign, two) => {
   if (sign === '+') {
     return one + two;
   }
@@ -14,21 +16,13 @@ const mathResult = (one, sign, two) => {
   return 'error';
 };
 
-const description = 'Find the greatest common divisor of given numbers.';
-
-const getRandomSign = () => {
-  const signs = ['+', '-', '*'];
-  const randomSign = signs[Math.floor(Math.random() * signs.length)];
-  return randomSign;
-};
-
 const getRound = () => {
   const number1 = generateRandomNumber();
-  const randomSign = getRandomSign();
+  const operation = signs[generateRandomNumber(0, signs.length)];
   const number2 = generateRandomNumber();
 
-  const answer = String(mathResult(number1, randomSign, number2));
-  const question = `${number1} ${randomSign} ${number2}`;
+  const answer = String(calculate(number1, operation, number2));
+  const question = `${number1} ${operation} ${number2}`;
   return [answer, question];
 };
 export default () => startGame(description, getRound);

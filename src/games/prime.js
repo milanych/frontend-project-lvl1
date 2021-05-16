@@ -17,9 +17,9 @@ const isPrime = (num) => {
   return result;
 };
 const getRound = () => {
-  const randomPrime = generateRandomNumber();
-  const question = isPrime(randomPrime) ? 'no' : 'yes';
-  const answer = randomPrime;
+  const number = generateRandomNumber();
+  const question = isPrime(number) ? 'no' : 'yes';
+  const answer = number.toString();
   return [question, answer];
 };
 export default () => startGame(description, getRound);

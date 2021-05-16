@@ -13,14 +13,14 @@ const getGcd = (num1, num2) => {
       result = i;
     }
   }
-  return String(result);
+  return result;
 };
 
 const getRound = () => {
-  const randomNumbers = [generateRandomNumber(1, 100), generateRandomNumber(1, 100)];
-  const sortedRandomNumbers = randomNumbers.sort();
-  const answer = getGcd(sortedRandomNumbers[0], sortedRandomNumbers[1]);
-  const question = `${sortedRandomNumbers[0]} ${sortedRandomNumbers[1]}`;
-  return [answer, question];
+  const number1 = generateRandomNumber(1, 100);
+  const number2 = generateRandomNumber(1, 100);
+  const answer = getGcd(number1, number2);
+  const question = `${number1} and ${number2}`;
+  return [String(answer), String(question)];
 };
 export default () => startGame(description, getRound);
