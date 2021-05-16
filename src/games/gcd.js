@@ -3,17 +3,10 @@ import startGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 const getGcd = (num1, num2) => {
-  let result = 0;
-  for (let i = 0; i <= num1; i += 1) {
-    const currentNum1 = num1 / i;
-    const roundedCurrentNum1 = Math.round(num1 / i);
-    const currentNum2 = num2 / i;
-    const roundedCurrentNum2 = Math.round(num2 / i);
-    if (currentNum1 === roundedCurrentNum1 && currentNum2 === roundedCurrentNum2) {
-      result = i;
-    }
+  if (num2 % num1 === 0) {
+    return num1;
   }
-  return result;
+  return getGcd(num2, num1 % num2);
 };
 
 const getRound = () => {
