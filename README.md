@@ -8,6 +8,7 @@
 make install-games
 ```
 ## Brain Games examples
+
 ### brain-calc:
 [![asciicast](https://asciinema.org/a/75YDTNxDzAVeukAJOzicIXlLp.svg)](https://asciinema.org/a/75YDTNxDzAVeukAJOzicIXlLp)
 
